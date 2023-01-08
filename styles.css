@@ -43,7 +43,7 @@ body {
 .about {
   margin: 20px;
   font-size: 25px;
-  color: rgb(5, 3, 45);
+  color: rgb(192, 190, 231);
   text-shadow: 1px 1px #2320b1;
   text-align: center;
 }
@@ -72,7 +72,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
   gap: 10px;
+  padding: 20px;
 }
 
 .fa {
@@ -111,7 +113,7 @@ ul#episodes {
   float: left;
   margin:  0 10px;
   padding: 0;
-  width: 35%;
+  width: 200px;
 }
 
 ul#episodes > li {
@@ -131,4 +133,16 @@ button {
 
 button:hover {
   background: #1d22b9;
+}
+
+.more {
+  color: white;
+  position: relative;
+  bottom: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+.more2 {
+  display: flex;
+  justify-content: center;
 }
