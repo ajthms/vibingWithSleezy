@@ -112,6 +112,8 @@ h1 {
 
 ul#episodes {
   float: left;
+  position: relative;
+  top: 5px;
   margin:  0 10px;
   padding: 0;
   width: 200px;
