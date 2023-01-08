@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(SleezyBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100vw;
+  box-shadow: 0 0 15px black;
+  opacity: 0.8;
+}
+
+.title {
+  margin: 30px 0;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  text-align: end;
+  margin: 20px;
+  color: rgb(43, 35, 207);
+	font-size: 40px;
+  text-shadow: 2px 2px #000000;
+}
+
+#media-player {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 100vw;
+}
+
+.about {
+  margin: 20px;
+  font-size: 25px;
+  color: rgb(5, 3, 45);
+  text-shadow: 1px 1px #2320b1;
+  text-align: center;
+}
+
+.text {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, .2); 
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  max-width: 500px;
+  max-height: 400px;
+  opacity: 0.8;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  transition: all .3s ease-out;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #d04cdf;
+  color: white;
+}
+
+h1 {
+  margin:  10px;
+}
+
+ul#episodes {
+  float: left;
+  margin:  0 10px;
+  padding: 0;
+  width: 35%;
+}
+
+ul#episodes > li {
+  list-style-type: none;
+}
+
+button {
+  border-radius:  7px;
+  border: 0;
+  background: #191414;
+  color: #fff;
+  padding:  10px;
+  margin:  0 0 3px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d22b9;
+}
