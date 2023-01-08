@@ -27,7 +27,7 @@ body {
   top: 0;
   text-align: end;
   margin: 20px;
-  color: rgb(43, 35, 207);
+  color: rgb(111, 105, 228);
 	font-size: 40px;
   text-shadow: 2px 2px #000000;
 }
@@ -66,6 +66,7 @@ body {
   max-width: 500px;
   max-height: 400px;
   opacity: 0.8;
+  background-color: #191414;
 }
 
 .links {
@@ -129,10 +130,12 @@ button {
   margin:  0 0 3px 0;
   width: 100%;
   cursor: pointer;
+  opacity: 0.8;
 }
 
 button:hover {
   background: #1d22b9;
+  opacity: 1;
 }
 
 .more {
@@ -142,7 +145,57 @@ button:hover {
   max-width: 400px;
   text-align: center;
 }
-.more2 {
+
+.moreContainer {
   display: flex;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 200, 0);
+}
+
+@media only screen and (min-width: 1100px) {
+  #media-player {
+    max-width: 400px;
+  }
+
+  .mediaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    #episodes {
+      position: relative;
+      top: 27px;
+    }
+
+    .hero img {
+      max-width: 800px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .more {
+      max-width: 600px;
+    }
+
+    button {
+      position: relative;
+      bottom: 30px;
+    }
+
+    .title {
+      font-size: 80px;
+      right: 200px;
+      text-align: start;
+    }
 }
