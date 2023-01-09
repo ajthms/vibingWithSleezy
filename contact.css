@@ -17,6 +17,11 @@
     font-size: 8px;
     gap: 20px;
   }
+
+  .copy {
+    position: fixed;
+    bottom: 0;
+  }
   
   .Eric {
     margin: 20px 0;
