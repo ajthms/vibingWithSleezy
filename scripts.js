@@ -24,7 +24,18 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach(n =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+    const target = document.querySelector(n.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth"
+    });
+  })
+);
+
+window.addEventListener("scroll", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
-}))
+});
