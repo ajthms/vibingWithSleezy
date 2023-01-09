@@ -95,9 +95,9 @@ body {
   top: 0;
   text-align: end;
   margin: 20px;
-  color: rgb(111, 105, 228);
+  color: rgb(134, 129, 236);
 	font-size: 40px;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 5px 5px #000000;
 }
 
 #media-player {
@@ -231,7 +231,7 @@ button:hover {
   transition: .2s ease-in-out;
 }
 
-@media (max-width:768px) {
+@media (max-width: 850px) {
   .hamburger {
     display: block;
   }
@@ -293,7 +293,7 @@ button:hover {
       max-width: 100vh;
     }
 
-    body {
+    .body2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
