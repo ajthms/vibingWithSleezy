@@ -31,16 +31,11 @@
   }
   
   .contacts {
-      height: 100vh;
       display: flex;
       align-items: center;
       flex-direction: column;
       text-align: center;
       margin: 10px;
-  }
-
-  .contactContainer {
-    height: 400px;
   }
   
     .email {
@@ -51,14 +46,14 @@
       @media only screen and (min-width: 1100px) {
         .contacts {
             justify-content: center;
+            height: 100vh;;
         }
-      }
-
-      .glass {
-        margin: 20px;
-        max-width: 95vw;
-      }
-
-      .links2 li {
-        font-size: 12px;
+        .glass {
+          margin: 20px;
+          max-width: 90vw;
+        }
+  
+        .links2 li {
+          font-size: 12px;
+        }
       }
