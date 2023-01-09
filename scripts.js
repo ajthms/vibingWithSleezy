@@ -1,8 +1,8 @@
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   let element = document.getElementById('embed-iframe');
   let options = {
-      width: '80%',
-      height: '200',
+      width: '100%',
+      height: '150',
       uri: 'spotify:episode:10tt2L4Yh59dsbBL3qOooO?si=4fbe1a98b94040c6'
     };
   let callback = (EmbedController) => {
