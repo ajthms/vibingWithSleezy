@@ -134,7 +134,7 @@ body {
   max-width: 500px;
   max-height: 400px;
   opacity: 0.8;
-  background-color: #191414;
+  background-color: #000000;
 }
 
 .links {
@@ -273,6 +273,17 @@ button:hover {
 }
 
 @media only screen and (min-width: 1100px) {
+
+  .hero {
+    position: fixed;
+    left: 0;
+  }
+
+.text-body {
+  position: absolute;
+  right: 40px;
+}
+
   #media-player {
     max-width: 400px;
   }
