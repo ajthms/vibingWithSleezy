@@ -1,0 +1,55 @@
+.links2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+  }
+  
+  .links2 li {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    color: rgb(213, 213, 213);
+    padding: 4px;
+    font-size: 10px;
+    gap: 20px;
+  }
+  
+  .Eric {
+    margin: 20px 0;
+    color: rgb(224, 224, 224);
+    font-size: 25px;
+  }
+  
+  .socials {
+    position: relative;
+    top: 4px;
+    right: 3px;
+  }
+  
+  .contacts {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      margin: 10px;
+  }
+  
+  .contactContainer {
+    
+      }
+  
+    .email {
+        position: relative;
+        top: 4px;
+      }
+
+      @media only screen and (min-width: 1100px) {
+        .contacts {
+            justify-content: center;
+        }
+      }
