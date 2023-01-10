@@ -80,11 +80,11 @@
 </div>
 </div>
 <div class="formContainer">
-    <form>
+    <form onsubmit="sendEmail(); reset(); return false">
         <h3>Want To Be On The Show?</h3>
-        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="name" placeholder="Name" required>
         <input type="email" id="email" placeholder="E-mail" required>
-        <textarea id="message" rows="4" placeholder="What makes you unique?"></textarea>
+        <textarea id="message" rows="3" placeholder="What makes you unique?"></textarea>
         <button type="submit">Send</button>
     </form>
     </div>
@@ -92,7 +92,7 @@
 <div class="copy">
     <div class="copyright">Copyright &copy; 2023 Vibing With Sleezy</div>
     </div>
-              
+    <script src="https://smtpjs.com/v3/smtp.js"></script>          
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -39,3 +39,19 @@ window.addEventListener("scroll", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 });
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "ajthms@yahoo.com",
+    Password : "0A049C912CAFF352145E887036946EFFCC75",
+    To : 'ajthms@yahoo.com',
+    From : document.getElementById("email").value,
+    Subject : "New Website Message",
+    Body : "Name: " + document.getElementById(name).value
+    + "<br> Email: " +document.getElementById(email).value
+    + "<br> Message: " +document.getElementById(message).value
+}).then(
+  message => alert("Sent!")
+);
+}
