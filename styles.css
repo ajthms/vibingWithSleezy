@@ -299,12 +299,24 @@ button:hover {
       top: 27px;
     }
 
+    .hero {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 50%;
+      z-index: 1;
+    }
+    
+
     .hero img {
       object-fit: cover;
       height: 100vh;
     }
 
     .body2 {
+      max-height: 100vh;
+      overflow: hidden;
+      margin-left: 50%;
       display: grid;
       grid-template-columns: 1fr 1fr;
     }
