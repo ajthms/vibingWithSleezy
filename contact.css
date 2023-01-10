@@ -48,7 +48,7 @@
 
     @media only screen and (max-width: 1099px) {
         .glass {
-            padding-bottom: 50px;
+            height: 200px;
         }
     }
 
