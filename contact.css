@@ -103,7 +103,20 @@
     .glass {
         margin: 20px;
     }
+
+    .ericStand {
+        display: none;
+    }
+
+    .ericStand2 {
+        display: none;
+    }
     
+    .body3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
     @media only screen and (max-width: 1099px) {
         .glass {

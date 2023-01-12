@@ -87,8 +87,12 @@ body {
 }
 
 .hero img {
-  max-width: 100vw;
-  box-shadow: 0 0 15px black;
+  max-height: 90vh;
+}
+
+.thanks {
+  font-size: 30px;
+  color: white;
 }
 
 .title {
