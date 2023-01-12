@@ -123,7 +123,7 @@ body {
 }
 
 .infoContainer {
-  overflow: scroll;
+  overflow: auto;
 }
 
 .text {
@@ -299,7 +299,7 @@ overflow-y: scroll;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 1fr 0;
+    grid-template-rows: 0 1fr 0;
   }
 
   #media-player {
@@ -311,6 +311,11 @@ overflow-y: scroll;
       top: 27px;
     }
 
+    .hero {
+      position: sticky;
+      top: 70px;
+      align-self: center;
+    }
 
     .hero img {
       object-fit: cover;
@@ -318,8 +323,8 @@ overflow-y: scroll;
     }
 
     .body2 {
-      max-height: 100vh;
-      overflow: hidden;
+      /* max-height: 100vh;
+      overflow: hidden; */
       display: grid;
       grid-template-columns: 1fr 1fr; 
     }
