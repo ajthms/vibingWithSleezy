@@ -122,6 +122,21 @@
             flex-direction: column;
             align-items: center;
         }
+
+        .ericStand {
+            position: absolute;
+            left: 30px;
+            height: 100vh;
+            top: 90px;
+            transform: scaleX(-1);
+        }
+
+        .ericStand2 {
+            position: absolute;
+            right: 30px;
+            height: 100vh;
+            top: 90px;
+        }
        
         .contacts {
             justify-content: center;

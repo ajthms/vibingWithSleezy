@@ -40,18 +40,4 @@ window.addEventListener("scroll", () => {
   navMenu.classList.remove("active");
 });
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ajthm256@gmail.com",
-    Password : "E1730D29456380362BB99D967FEC1F30EA08",
-    To : 'ajthms@yahoo.com',
-    From : document.getElementById("email").value,
-    Subject : "New Website Message",
-    Body : "Name: " +document.getElementById(name).value
-    + "<br> Email: " +document.getElementById(email).value
-    + "<br> Message: " +document.getElementById(message).value
-}).then(
-  message => alert("Sent!")
-);
-}
+
