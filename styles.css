@@ -79,6 +79,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: scroll;
+  margin-top: 70px;
 }
 
 .hero {
