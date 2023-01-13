@@ -186,7 +186,11 @@ h1 {
 
 ul#episodes {
   padding: 20px;
-  width: 200px;
+  width: 100%;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul#episodes > li {
@@ -201,15 +205,16 @@ ul#episodes > li {
 }
 
 button {
-  border-radius:  7px;
   border: 0;
-  background: #191414;
+  background: none;
   color: #fff;
   padding:  10px;
   margin:  0 0 3px 0;
-  width: 100%;
+  width: 200px;
+  text-align: center;
   cursor: pointer;
   opacity: 0.8;
+  border-bottom: 1px solid grey;
 }
 
 button:hover {
