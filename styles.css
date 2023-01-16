@@ -186,6 +186,7 @@ h1 {
 
 ul#episodes {
   padding: 20px;
+  margin: 10px;
   width: 100%;
   border-radius: 0;
   display: flex;

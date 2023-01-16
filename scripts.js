@@ -9,9 +9,11 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
     document.querySelectorAll('ul#episodes > li > button').forEach(
       episode => {
         episode.addEventListener('click', () => {
-          EmbedController.loadUri(episode.dataset.spotifyId)
+          EmbedController.loadUri(episode.dataset.spotifyId);
+          document.querySelector(".glass").style.display = "block";
+          document.querySelector('#episode-description').innerHTML = episode.dataset.description;
         });
-      })
+      });
   };
   IFrameAPI.createController(element, options, callback);
 };
