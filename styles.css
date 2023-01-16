@@ -144,6 +144,17 @@ body {
   background-color: #000000;
 }
 
+.comingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming {
+  color: White;
+  font-size: 40px;
+}
+
 .links {
   display: flex;
   flex-direction: row;

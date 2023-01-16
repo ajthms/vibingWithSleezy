@@ -24,6 +24,14 @@
 
 }
 
+.more {
+    max-width: 400px;
+}
+
+.moreContainer {
+    padding: 20px;
+}
+
     .glass {
         display: none;
     }
@@ -45,4 +53,6 @@
         display: flex;
         justify-content: center;
     }
+
+
   }
