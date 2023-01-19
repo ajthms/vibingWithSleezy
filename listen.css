@@ -52,7 +52,12 @@
     .logoContainer {
         display: flex;
         justify-content: center;
-    }
+        position: sticky;
+        top: 70px;
+        align-self: center;
+        top: 0;
+      }
 
+    
 
   }
