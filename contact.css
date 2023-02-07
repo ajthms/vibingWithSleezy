@@ -80,11 +80,12 @@
   
   .email {
       position: relative;
-      top: 6.5px;
+      top: 2px;
     }
 
     .links2 li a {
         color: yellow;
+        font-size: 20px;
     }
 
     .links2 li a:hover {
