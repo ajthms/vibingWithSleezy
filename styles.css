@@ -13,6 +13,8 @@ a {
   text-decoration: none;
 }
 
+
+
 .header {
 z-index: 1;
 }
@@ -329,11 +331,7 @@ overflow-y: scroll;
       top: 27px;
     }
 
-    .hero {
-      position: sticky;
-      top: 70px;
-      align-self: center;
-    }
+    
 
     .hero img {
       object-fit: cover;

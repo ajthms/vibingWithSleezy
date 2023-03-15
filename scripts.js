@@ -110,23 +110,35 @@ const episodes = [
 const ul = document.createElement("ul");
 ul.setAttribute("id", "episodes");
 
-episodes.forEach(episode => {
-  const li = document.createElement("li");
-  const button = document.createElement("button");
-  button.innerHTML = episode.name;
-  button.dataset.spotifyId = episode.id;
-  button.dataset.description = episode.description;
-
-  button.addEventListener("click", () => {
-    EmbedController.loadUri(button.dataset.spotifyId);
-    document.querySelector(".glass").style.display = "block";
+const renderEpisodes = (episodes) => {
+  ul.innerHTML = "";
+  episodes.forEach(episode => {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.innerHTML = episode.name;
+    button.dataset.spotifyId = episode.id;
+    button.dataset.description = episode.description;
+  
+    button.addEventListener("click", () => {
+      EmbedController.loadUri(button.dataset.spotifyId);
+      document.querySelector(".glass").style.display = "block";
+    });
+  
+    li.appendChild(button);
+    ul.appendChild(li);
   });
+  
+  document.querySelector("#some-container").appendChild(ul);
+};
 
-  li.appendChild(button);
-  ul.appendChild(li);
+renderEpisodes(episodes);
+
+const searchBar = document.createElement("input");
+searchBar.setAttribute("type", "text");
+searchBar.setAttribute("placeholder", "Search Episodes...");
+searchBar.addEventListener("input", (event) => {
+  const filteredEpisodes = episodes.filter(episode => episode.name.toLowerCase().includes(event.target.value.toLowerCase()));
+  renderEpisodes(filteredEpisodes);
 });
 
-document.querySelector("#some-container").appendChild(ul);
-
-
-
+document.querySelector("#some-container").prepend(searchBar);
